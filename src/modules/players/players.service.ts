@@ -18,6 +18,7 @@ export class PlayersService {
       );
     }
     this.players = [];
+    this.cardSerice.initDeck();
     for (let i = 1; i <= n; i++) {
       this.players.push({
         name: `Player ${i}`,
